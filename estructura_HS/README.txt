@@ -1,18 +1,20 @@
-Patricia Gutiérrez, octubre 2019
+Patricia Gutiérrez, october 2019
 Universidad de Guanajuato
 gutierrezrs2015@licifug.ugto.mx
 
 
-Factor de estructura de esfera dura.
-TODO: Comparar my_data.dat con target.dat
-hasta que coincidan. Ambos archivos
-en directorio data
+Structure factor for hard Sphere
 
 
-Instrucciones:
+Instructions:
 =============
 
-1.) Compilar y correr:
+3.) Dependencies:
+----------------------
+gcc compiler
+
+
+2.) Compile and run:
 --------------------------
 
 cd src
@@ -24,7 +26,7 @@ cd ../bin/
 ./Sk_HS
 
 
-2.) Limpiar:
+3.) Cleaning up:
 ----------------
 
 cd src
