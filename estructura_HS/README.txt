@@ -3,7 +3,7 @@ Universidad de Guanajuato
 gutierrezrs2015@licifug.ugto.mx
 
 
-Structure factor for hard Sphere
+Structure factor and forces for hard Sphere
 
 
 Instructions:
@@ -23,7 +23,8 @@ make
 
 cd ../bin/
 
-./Sk_HS
+./Sk_HS --> For structure factor
+./forces_HS --> For forces
 
 
 3.) Cleaning up:

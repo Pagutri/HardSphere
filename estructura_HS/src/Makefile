@@ -1,13 +1,19 @@
 CC = gcc
 CFLAGS   = -O3 -Wall -Wstrict-prototypes -ansi -pedantic -lm
-EXECUTABLE = ../bin/Sk_HS
+COMMONSRC = libraries.h constants.h
+EXECUTABLE = ../bin/forces_HS
 
 
-$(EXECUTABLE): Sk_HS.o
-	$(CC) -o $(EXECUTABLE) Sk_HS.o $(CFLAGS)
+$(EXECUTABLE): forces_HS.o funciones.o $(COMMONSRC)
+	$(CC) -o $(EXECUTABLE) forces_HS.o funciones.o $(CFLAGS)
 
+funciones.o: funciones.c $(COMMONSRC)
+	$(CC) -c -o funciones.o funciones.c $(CFLAGS)
 
-Sk_HS.o: Sk_HS.c
+forces_HS.o: forces_HS.c $(COMMONSRC)
+	$(CC) -c -o forces_HS.o forces_HS.c $(CFLAGS)
+
+Sk_HS.o: Sk_HS.c $(COMMONSRC)
 	$(CC) -c -o Sk_HS.o Sk_HS.c $(CFLAGS)
 
 
